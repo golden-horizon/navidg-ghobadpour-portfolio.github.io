@@ -1,134 +1,105 @@
-/* Reset */
-/* ===== Reset ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:Segoe UI,Roboto,sans-serif;
+  background:#0d1117;
+  color:#e6edf3;
+  line-height:1.6;
 }
 
-/* ===== Body ===== */
-body {
-  font-family: "Segoe UI", Roboto, sans-serif;
-  background: #0d1117;
-  color: #e6edf3;
-  line-height: 1.6;
+/* Navbar */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 40px;
+  background:#161b22;
+  border-bottom:1px solid #30363d;
 }
 
-/* ===== Header ===== */
-header {
-  text-align: center;
-  padding: 70px 20px;
-  background: radial-gradient(circle at top, #161b22, #0d1117);
+.navbar ul{display:flex;gap:20px;list-style:none}
+.navbar a{color:#e6edf3;text-decoration:none}
+.navbar a:hover{color:#58a6ff}
+
+/* Header */
+header{
+  text-align:center;
+  padding:70px 20px;
 }
 
-/* Profile Photo */
-.profile {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 3px solid #58a6ff;
-  margin-bottom: 20px;
-  transition: 0.3s;
+.profile{
+  width:140px;
+  border-radius:50%;
+  border:3px solid #58a6ff;
+  margin-bottom:20px;
 }
 
-.profile:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #58a6ff55;
+h1{font-size:34px;color:#58a6ff}
+h2{color:#58a6ff;margin-bottom:20px}
+
+/* Buttons */
+.btn,.btn-outline{
+  padding:10px 20px;
+  border-radius:6px;
+  text-decoration:none;
+  margin:6px;
+  display:inline-block;
 }
 
-/* Name */
-header h1 {
-  font-size: 34px;
-  color: #58a6ff;
+.btn{background:#2ea043;color:white}
+.btn:hover{background:#238636}
+
+.btn-outline{
+  border:1px solid #58a6ff;
+  color:#58a6ff;
+}
+.btn-outline:hover{
+  background:#58a6ff;
+  color:white;
 }
 
-header p {
-  color: #8b949e;
-  margin-top: 10px;
+/* Sections */
+section{
+  max-width:1100px;
+  margin:60px auto;
+  padding:0 20px;
 }
 
-/* ===== Buttons ===== */
-.btn {
-  display: inline-block;
-  background: #238636;
-  padding: 12px 22px;
-  border-radius: 6px;
-  margin-top: 15px;
-  color: white;
-  text-decoration: none;
-  transition: 0.25s ease;
+/* Cards */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
 }
 
-.btn:hover {
-  background: #2ea043;
-  transform: translateY(-2px);
+.card{
+  background:#161b22;
+  padding:20px;
+  border-radius:10px;
+  border:1px solid #30363d;
+  transition:.25s;
 }
 
-/* ===== Sections ===== */
-section {
-  max-width: 1100px;
-  margin: 60px auto;
-  padding: 0 20px;
+.card:hover{
+  transform:translateY(-6px);
+  border-color:#58a6ff;
+  box-shadow:0 8px 20px rgba(0,0,0,.4);
 }
 
-h2 {
-  color: #58a6ff;
-  margin-bottom: 20px;
+/* GitHub */
+.github{text-align:center}
+.github img{max-width:100%;margin:10px}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:20px;
+  border-top:1px solid #30363d;
+  color:#8b949e;
 }
 
-/* ===== Cards ===== */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+/* Responsive */
+@media(max-width:768px){
+  h1{font-size:26px}
+  .navbar{flex-direction:column;gap:10px}
 }
-
-.card {
-  background: #161b22;
-  border: 1px solid #30363d;
-  padding: 22px;
-  border-radius: 10px;
-  transition: all 0.25s ease;
-}
-
-.card:hover {
-  border-color: #58a6ff;
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-}
-
-/* ===== GitHub Stats ===== */
-.github-stats {
-  text-align: center;
-}
-
-.github-stats img {
-  max-width: 100%;
-  margin: 10px;
-  border-radius: 8px;
-}
-
-/* ===== Footer ===== */
-footer {
-  text-align: center;
-  padding: 25px;
-  border-top: 1px solid #30363d;
-  color: #8b949e;
-}
-
-/* ===== MEDIA QUERY (Responsive) ===== */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 26px;
-  }
-
-  .profile {
-    width: 110px;
-    height: 110px;
-  }
-
-  section {
-    margin: 40px auto;
-  }
-}
-
