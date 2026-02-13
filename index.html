@@ -6,59 +6,67 @@
   <title>Navid Ghobadpour | Cybersecurity & Web Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>Hi, I'm <span id="typed"></span></h1>
-    <p>Cybersecurity • Cloud Security • Web Developer</p>
-    <a class="btn" href="resume.pdf" download>Download Resume</a>
-  </header>
+<nav class="navbar">
+  <h2>Navid</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- GitHub Stats -->
-  <section class="github-stats">
-    <h2>GitHub Stats</h2>
-    <img src="https://github-readme-stats.vercel.app/api?username=golden-horizon&show_icons=true&theme=tokyonight&hide_border=true">
+<header>
+  <img src="assets/profile.jpg" class="profile">
+  <h1>I’m <span id="typed"></span></h1>
+  <p>Cybersecurity • Cloud Security • Web Developer</p>
 
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=golden-horizon&layout=compact&theme=tokyonight&hide_border=true">
+  <div class="buttons">
+    <a href="resume.pdf" class="btn" download>Download Resume</a>
+    <a href="https://github.com/golden-horizon" class="btn-outline">GitHub</a>
+    <a href="https://www.linkedin.com/in/navid-ghobadpour-90178180/" class="btn-outline">LinkedIn</a>
+  </div>
+</header>
 
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Cybersecurity & Cloud Security specialist with hands-on experience in SIEM,
+    threat detection, AWS secure architecture, networking, and secure web development.
+    Passionate about protecting systems and building secure, scalable infrastructure.
+  </p>
+</section>
 
-  <!-- Projects Preview -->
-  <section class="projects">
-    <h2>Featured Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>SIEM Monitoring Lab</h3>
-        <p>Threat detection & log analysis using Splunk.</p>
-      </div>
-      <div class="card">
-        <h3>AWS Secure Cloud</h3>
-        <p>Secure VPC, IAM hardening, monitoring & logging.</p>
-      </div>
-      <div class="card">
-        <h3>Enterprise VPN Network</h3>
-        <p>Site-to-Site IPsec VPN with secure connectivity.</p>
-      </div>
-    </div>
-    <a class="btn" href="projects.html">View All Projects</a>
-  </section>
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="grid">
+    <div class="card">SIEM / Splunk / Threat Detection</div>
+    <div class="card">AWS Security (EC2, IAM, VPC, CloudWatch)</div>
+    <div class="card">Web Dev (HTML, CSS, JS)</div>
+    <div class="card">Linux & Networking</div>
+  </div>
+</section>
 
-  <!-- Contribution Snake -->
-  <section class="snake">
-    <h2>GitHub Contribution Snake</h2>
-    <img src="https://github.com/YOUR_USERNAME/github-contribution-grid-snake.svg" alt="Contribution Snake">
-  </section>
+<section class="github">
+  <h2>GitHub Stats</h2>
+  <img src="https://github-readme-stats.vercel.app/api?username=golden-horizon&show_icons=true&theme=tokyonight&hide_border=true">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=golden-horizon&layout=compact&theme=tokyonight&hide_border=true">
+</section>
 
-  <footer>
-    <p>© 2026 Navid Ghobadpour | Cybersecurity & Web Developer</p>
-  </footer>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: navid77g@gmail.com</p>
+  <p>GitHub: github.com/golden-horizon</p>
+  <p>LinkedIn: navid-ghobadpour</p>
+</section>
 
-  <!-- Scripts -->
-  <script src="script.js"></script>
+<footer>
+  <p>© 2026 Navid Ghobadpour</p>
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
-
