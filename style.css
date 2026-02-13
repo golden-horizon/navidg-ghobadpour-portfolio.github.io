@@ -103,3 +103,11 @@ footer{
   h1{font-size:26px}
   .navbar{flex-direction:column;gap:10px}
 }
+.github img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+
