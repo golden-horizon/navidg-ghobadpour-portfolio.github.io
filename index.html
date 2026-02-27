@@ -66,31 +66,25 @@
 
   <!-- Projects -->
   <section id="projects">
-    <h2>Security Projects</h2>
+  <h2>Security Projects</h2>
 
-    <div class="project-card">
-      <h3>Enterprise SIEM Implementation</h3>
-      <p>Designed and implemented enterprise SIEM architecture.</p>
-      <button class="btn-outline open-modal"
-        data-title="Enterprise SIEM Implementation"
-        data-desc="Designed and implemented a secure SIEM architecture using Splunk with threat detection rules and log aggregation."
-        data-points="AWS EC2 + IAM Hardening,Splunk Log Monitoring,Firewall & IDS Integration">
-        View Security Project
-      </button>
-    </div>
+  <div class="card">
+    <h3>Enterprise SIEM Implementation</h3>
+    <p>Designed and implemented enterprise SIEM architecture.</p>
+    <button class="btn-outline open-modal" data-project="siem">
+      View Security Project
+    </button>
+  </div>
 
-    <div class="project-card">
-      <h3>Site-to-Site IPsec VPN</h3>
-      <p>Secure communication between Sydney & Melbourne offices.</p>
-      <button class="btn-outline open-modal"
-        data-title="Site-to-Site IPsec VPN"
-        data-desc="Configured secure VPN tunnel between two enterprise networks with encrypted communication."
-        data-points="IPsec Configuration,Firewall Rules,NAT & Routing Setup">
-        View Security Project
-      </button>
-    </div>
+  <div class="card">
+    <h3>Site-to-Site IPsec VPN</h3>
+    <p>Secure communication between Sydney & Melbourne offices.</p>
+    <button class="btn-outline open-modal" data-project="vpn">
+      View Security Project
+    </button>
+  </div>
+</section>
 
-  </section>
 
   <!-- Contact -->
   <section id="contact">
@@ -119,6 +113,7 @@
   <script src="index.js"></script>
 </body>
 </html>
+
 
 
 
