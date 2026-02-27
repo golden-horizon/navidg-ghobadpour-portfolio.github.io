@@ -77,8 +77,29 @@
   <p>© 2026 Navid Ghobadpour</p>
 </footer>
 <script src="index.js"></script>
+  <button id="open-modal-btn" class="btn-outline">
+  View Security Project
+</button>
+
+<dialog id="modal" class="modal">
+  <h2>Enterprise SIEM Implementation</h2>
+  <p>
+    Designed and implemented a secure SIEM architecture using Splunk
+    with threat detection rules and log aggregation.
+  </p>
+  <ul>
+    <li>AWS EC2 + IAM Hardening</li>
+    <li>Splunk Log Monitoring</li>
+    <li>Firewall & IDS Integration</li>
+  </ul>
+  <button onclick="document.getElementById('modal').close()" class="btn">
+    Close
+  </button>
+</dialog>
+
 </body>
 </html>
+
 
 
 
