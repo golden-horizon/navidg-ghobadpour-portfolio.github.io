@@ -3,114 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navid Ghobadpour  Cybersecurity  Web Developer</title>
+  <title>Navid Ghobadpour | Cybersecurity & Web Developer</title>
   <link rel="stylesheet" href="style.css">
- 
-
-  
 </head>
 
 <body>
+
+  <!-- Toggle Background -->
   <button id="btn" class="btn-outline">Toggle Background</button>
+
+  <!-- Banner -->
   <div class="banner-wrapper">
-  <div id="rect" class="rect">
-    Building Secure Infrastructure for a Safer Digital World
+    <div id="rect" class="rect">
+      Building Secure Infrastructure for a Safer Digital World
+    </div>
   </div>
-</div>
 
-<nav class="navbar">
-  <h2>Navid</h2>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<header>
-  <img src="https://github.com/golden-horizon/navidg-ghobadpour.github.io/blob/main/IMG_0589.jpg?raw=true" class="profile">
-  <h1>I’m <span id="typed"></span></h1>
-  <p>Cybersecurity • Cloud Security • Web Developer</p>
-
-  <div class="buttons">
-    <a href="resume.pdf" class="btn" download>Download Resume</a>
-    <a href="https://github.com/golden-horizon" class="btn-outline">GitHub</a>
-    <a href="https://www.linkedin.com/in/navid-ghobadpour-90178180/" class="btn-outline">LinkedIn</a>
-  </div>
-</header>
-
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    Cybersecurity & Cloud Security specialist with hands-on experience in SIEM,
-    threat detection, AWS secure architecture, networking, and secure web development.
-    Passionate about protecting systems and building secure, scalable infrastructure.
-  </p>
-</section>
-
-<section id="skills">
-  <h2>Technical Skills</h2>
-  <div class="grid">
-    <div class="card">SIEM / Splunk / Threat Detection</div>
-    <div class="card">AWS Security (EC2, IAM, VPC, CloudWatch)</div>
-    <div class="card">Web Dev (HTML, CSS, JS)</div>
-    <div class="card">Linux & Networking</div>
-  </div>
-</section>
-
-<section class="github">
-  <h2>GitHub Stats</h2>
-  <img src="https://github-readme-stats.vercel.app/api?username=golden-horizon&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true" />
-
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=golden-horizon&layout=compact&theme=tokyonight&hide_border=true" />
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: navid77g@gmail.com</p>
-  <p>GitHub: github.com/golden-horizon</p>
-  <p>LinkedIn: navid-ghobadpour</p>
-</section>
-
-<footer>
-  <p>© 2026 Navid Ghobadpour</p>
-</footer>
-
-<button id="open-modal-btn" class="btn-outline">
-  View Security Project
-</button>
-
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span id="close-modal-btn" class="close">&times;</span>
-
-    <h2>Enterprise SIEM Implementation</h2>
-    <p>
-      Designed and implemented a secure SIEM architecture using Splunk
-      with threat detection rules and log aggregation.
-    </p>
-
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h2>Navid</h2>
     <ul>
-      <li>AWS EC2 + IAM Hardening</li>
-      <li>Splunk Log Monitoring</li>
-      <li>Firewall & IDS Integration</li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </div>
-</div>
+  </nav>
 
-<script src="index.js"></script>
+  <!-- Header -->
+  <header>
+    <img src="https://github.com/golden-horizon/navidg-ghobadpour.github.io/blob/main/IMG_0589.jpg?raw=true" class="profile">
+    <h1>I’m <span id="typed"></span></h1>
+    <p>Cybersecurity • Cloud Security • Web Developer</p>
+
+    <div class="buttons">
+      <a href="resume.pdf" class="btn" download>Download Resume</a>
+      <a href="https://github.com/golden-horizon" class="btn-outline" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/navid-ghobadpour-90178180/" class="btn-outline" target="_blank">LinkedIn</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Cybersecurity & Cloud Security specialist with hands-on experience in SIEM,
+      threat detection, AWS secure architecture, networking, and secure web development.
+      Passionate about protecting systems and building secure, scalable infrastructure.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="grid">
+      <div class="card">SIEM / Splunk / Threat Detection</div>
+      <div class="card">AWS Security (EC2, IAM, VPC, CloudWatch)</div>
+      <div class="card">Web Dev (HTML, CSS, JS)</div>
+      <div class="card">Linux & Networking</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Security Projects</h2>
+
+    <div class="project-card">
+      <h3>Enterprise SIEM Implementation</h3>
+      <p>Designed and implemented enterprise SIEM architecture.</p>
+      <button class="btn-outline open-modal"
+        data-title="Enterprise SIEM Implementation"
+        data-desc="Designed and implemented a secure SIEM architecture using Splunk with threat detection rules and log aggregation."
+        data-points="AWS EC2 + IAM Hardening,Splunk Log Monitoring,Firewall & IDS Integration">
+        View Security Project
+      </button>
+    </div>
+
+    <div class="project-card">
+      <h3>Site-to-Site IPsec VPN</h3>
+      <p>Secure communication between Sydney & Melbourne offices.</p>
+      <button class="btn-outline open-modal"
+        data-title="Site-to-Site IPsec VPN"
+        data-desc="Configured secure VPN tunnel between two enterprise networks with encrypted communication."
+        data-points="IPsec Configuration,Firewall Rules,NAT & Routing Setup">
+        View Security Project
+      </button>
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: navid77g@gmail.com</p>
+    <p>GitHub: github.com/golden-horizon</p>
+    <p>LinkedIn: navid-ghobadpour</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Navid Ghobadpour</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal-btn" class="close">&times;</span>
+
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc"></p>
+      <ul id="modal-list"></ul>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
 
 
 
