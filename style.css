@@ -138,5 +138,19 @@ body {
   left: 0;
 }
 
+.modal {
+  padding: 30px;
+  border-radius: 10px;
+  background: #161b22;
+  color: #e6edf3;
+  border: 1px solid #30363d;
+  max-width: 500px;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+
 
 
