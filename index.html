@@ -6,13 +6,12 @@
   <title>Navid Ghobadpour | Cybersecurity & Web Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- Toggle Background -->
+  <!-- Background Toggle Button -->
   <button id="btn" class="btn-outline">Toggle Background</button>
 
-  <!-- Banner -->
+  <!-- Moving Banner -->
   <div class="banner-wrapper">
     <div id="rect" class="rect">
       Building Secure Infrastructure for a Safer Digital World
@@ -38,12 +37,12 @@
 
     <div class="buttons">
       <a href="resume.pdf" class="btn" download>Download Resume</a>
-      <a href="https://github.com/golden-horizon" class="btn-outline" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/navid-ghobadpour-90178180/" class="btn-outline" target="_blank">LinkedIn</a>
+      <a href="https://github.com/golden-horizon" class="btn-outline">GitHub</a>
+      <a href="https://www.linkedin.com/in/navid-ghobadpour-90178180/" class="btn-outline">LinkedIn</a>
     </div>
   </header>
 
-  <!-- About -->
+  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <p>
@@ -53,7 +52,7 @@
     </p>
   </section>
 
-  <!-- Skills -->
+  <!-- Skills Section -->
   <section id="skills">
     <h2>Technical Skills</h2>
     <div class="grid">
@@ -64,29 +63,28 @@
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- Projects Section -->
   <section id="projects">
-  <h2>Security Projects</h2>
+    <h2>Security Projects</h2>
 
-  <div class="card">
-    <h3>Enterprise SIEM Implementation</h3>
-    <p>Designed and implemented enterprise SIEM architecture.</p>
-    <button class="btn-outline open-modal" data-project="siem">
-      View Security Project
-    </button>
-  </div>
+    <div class="card">
+      <h3>Enterprise SIEM Implementation</h3>
+      <p>Designed and implemented enterprise SIEM architecture.</p>
+      <button class="btn-outline open-modal" data-project="siem">
+        View Security Project
+      </button>
+    </div>
 
-  <div class="card">
-    <h3>Site-to-Site IPsec VPN</h3>
-    <p>Secure communication between Sydney & Melbourne offices.</p>
-    <button class="btn-outline open-modal" data-project="vpn">
-      View Security Project
-    </button>
-  </div>
-</section>
+    <div class="card">
+      <h3>Site-to-Site IPsec VPN</h3>
+      <p>Secure communication between Sydney & Melbourne offices.</p>
+      <button class="btn-outline open-modal" data-project="vpn">
+        View Security Project
+      </button>
+    </div>
+  </section>
 
-
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: navid77g@gmail.com</p>
@@ -103,16 +101,16 @@
   <div id="modal" class="modal">
     <div class="modal-content">
       <span id="close-modal-btn" class="close">&times;</span>
-
-      <h2 id="modal-title"></h2>
-      <p id="modal-desc"></p>
-      <ul id="modal-list"></ul>
+      <div id="modal-body"></div>
     </div>
   </div>
 
+  <!-- JS -->
   <script src="index.js"></script>
 </body>
 </html>
+
+
 
 
 
