@@ -24,6 +24,16 @@ function update() {
   }
 }
 
+const dialog = document.getElementById("modal");
+const openButton = document.getElementById("open-modal-btn");
+
+if (openButton) {
+  openButton.addEventListener("click", () => {
+    dialog.showModal();
+  });
+}
+
+
 function animate() {
   update();
   requestAnimationFrame(animate);
