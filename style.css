@@ -47,10 +47,14 @@ dialog::backdrop{background:rgba(0,0,0,0.7);}
   margin: 40px auto;
   background-color: #161b22;
   color: #e6edf3;
-  border: 4px double #2ea043;
+  border: 2px solid #2ea043;
   border-radius: 10px;
+  position: relative;
   animation: borderPulse 4s infinite ease-in-out;
+  box-shadow: 0 0 0 4px #2ea043;
 }
+
+
 
 
 
