@@ -35,6 +35,29 @@ dialog{border:none;border-radius:10px;padding:20px;background:#161b22;color:#e6e
 dialog::backdrop{background:rgba(0,0,0,0.7);}
 #close-modal-btn{margin-top:20px;}
 
+.visitor-box {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #161b22;
+  border-radius: 12px;
+  color: #e6edf3;
+  font-size: 14px;
+  position: relative;
+
+  /* Double border effect */
+  border: 3px double #2ea043;
+
+  /* Smooth transition */
+  transition: border-color 1.5s ease;
+}
+
+/* Hover effect */
+.visitor-box:hover {
+  border-color: #ff8c00;
+}
+
+
 
 
 
