@@ -10,12 +10,21 @@ btn.addEventListener("click", () => {
 // Moving Banner
 const rect = document.getElementById("rect");
 let pos = -rect.offsetWidth;
+
 function moveBanner() {
-  rect.style.left = pos + "px";
-  pos += 2;
-  if(pos > window.innerWidth) pos = -rect.offsetWidth;
+  // recalc width each frame in case window resized
+  const bannerWidth = rect.offsetWidth;
+  
+  // move the banner
+  rect.style.transform = `translateX(${pos}px)`;
+  pos += 2; // speed in px/frame
+  
+  // reset if fully off screen
+  if(pos > window.innerWidth) pos = -bannerWidth;
+  
   requestAnimationFrame(moveBanner);
 }
+
 requestAnimationFrame(moveBanner);
 
 // Visitor Info
