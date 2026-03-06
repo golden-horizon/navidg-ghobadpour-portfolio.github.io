@@ -34,19 +34,19 @@ document.getElementById("screen").textContent = window.innerWidth + "x" + window
 
 // Fetch IP and Geo
 // Fetch IP & location (live server required)
+// Fetch IP, City, Country
 fetch("https://ipapi.co/json/")
   .then(res => res.json())
   .then(data => {
-    document.getElementById("ip").textContent = data.ip;
-    document.getElementById("city").textContent = data.city;
-    document.getElementById("country").textContent = data.country_name;
+    document.getElementById("ip").textContent = data.ip || "Unavailable";
+    document.getElementById("city").textContent = data.city || "Unavailable";
+    document.getElementById("country").textContent = data.country_name || "Unavailable";
   })
   .catch(()=>{ 
     document.getElementById("ip").textContent="Unavailable";
     document.getElementById("city").textContent="Unavailable";
     document.getElementById("country").textContent="Unavailable";
   });
-
 // Internet Speed Gauge
 const canvas = document.getElementById("speedGauge");
 const ctx = canvas.getContext("2d");
