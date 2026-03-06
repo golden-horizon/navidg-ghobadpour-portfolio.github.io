@@ -76,19 +76,25 @@ const ctx = canvas.getContext("2d");
 
 function drawGauge(speedPercent){
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  const centerX = canvas.width / 2;
+  const centerY = canvas.height;
+  const radius = 50;
+
   // semicircle background
   ctx.beginPath();
-  ctx.arc(50, 50, 40, Math.PI, 0, false);
+  ctx.arc(centerX, centerY, radius, Math.PI, 0, false);
   ctx.lineWidth = 6;
   ctx.strokeStyle = "#555";
   ctx.stroke();
 
   // needle
-  const angle = Math.PI - (speedPercent/100) * Math.PI;
-  const x = 50 + 35 * Math.cos(angle);
-  const y = 50 + 35 * Math.sin(angle);
+  const angle = Math.PI - (speedPercent / 100) * Math.PI; // 180deg to 0deg
+  const x = centerX + radius * 0.8 * Math.cos(angle);
+  const y = centerY + radius * 0.8 * Math.sin(angle);
+
   ctx.beginPath();
-  ctx.moveTo(50, 50);
+  ctx.moveTo(centerX, centerY);
   ctx.lineTo(x, y);
   ctx.strokeStyle = "#00bcd4";
   ctx.lineWidth = 4;
@@ -96,9 +102,20 @@ function drawGauge(speedPercent){
 
   // center circle
   ctx.beginPath();
-  ctx.arc(50, 50, 4, 0, 2*Math.PI);
+  ctx.arc(centerX, centerY, 5, 0, 2 * Math.PI);
   ctx.fillStyle = "#00bcd4";
   ctx.fill();
+}
+
+function updateSpeed() {
+  let speed = navigator.connection ? navigator.connection.downlink : Math.random() * 10 + 1;
+  let speedPercent = Math.min(speed * 10, 100);
+  drawGauge(speedPercent);
+  document.getElementById("speedValue").textContent = speed.toFixed(1) + "M";
+}
+
+setInterval(updateSpeed, 1000);
+updateSpeed();
 }
 
 function updateSpeed() {
