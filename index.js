@@ -33,6 +33,7 @@ document.getElementById("platform").textContent = navigator.platform;
 document.getElementById("screen").textContent = window.innerWidth + "x" + window.innerHeight;
 
 // Fetch IP and Geo
+// Fetch IP & location (live server required)
 fetch("https://ipapi.co/json/")
   .then(res => res.json())
   .then(data => {
@@ -40,7 +41,11 @@ fetch("https://ipapi.co/json/")
     document.getElementById("city").textContent = data.city;
     document.getElementById("country").textContent = data.country_name;
   })
-  .catch(()=>{document.getElementById("ip").textContent="N/A";});
+  .catch(()=>{ 
+    document.getElementById("ip").textContent="Unavailable";
+    document.getElementById("city").textContent="Unavailable";
+    document.getElementById("country").textContent="Unavailable";
+  });
 
 // Internet Speed Gauge
 const canvas = document.getElementById("speedGauge");
