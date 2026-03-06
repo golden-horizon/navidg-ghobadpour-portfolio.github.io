@@ -69,10 +69,11 @@ fetch("https://ipapi.co/json/")
     document.getElementById("city").textContent = "N/A";
     document.getElementById("country").textContent = "N/A";
   });
-
-// Speedometer
-const canvas = document.getElementById("speedGauge");
+ const canvas = document.getElementById("speedGauge");
 const ctx = canvas.getContext("2d");
+
+let currentSpeed = 0; // current needle position (Mbit/s)
+let targetSpeed = 0;  // new speed from network
 
 function drawGauge(speedPercent){
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -105,6 +106,28 @@ function drawGauge(speedPercent){
   ctx.arc(centerX, centerY, 5, 0, 2 * Math.PI);
   ctx.fillStyle = "#00bcd4";
   ctx.fill();
+}
+
+function updateSpeedValue() {
+  // Get speed from navigator.connection if available, else random
+  targetSpeed = navigator.connection ? navigator.connection.downlink : Math.random() * 10 + 1;
+}
+
+function animateNeedle() {
+  // Smoothly interpolate current speed toward targetSpeed
+  currentSpeed += (targetSpeed - currentSpeed) * 0.05; // 0.05 = smoothing factor
+  let speedPercent = Math.min(currentSpeed * 10, 100);
+  drawGauge(speedPercent);
+  document.getElementById("speedValue").textContent = currentSpeed.toFixed(1) + "M";
+  requestAnimationFrame(animateNeedle);
+}
+
+// Update speed every 2 seconds
+setInterval(updateSpeedValue, 2000);
+updateSpeedValue();
+
+// Start animation
+animateNeedle();
 }
 
 function updateSpeed() {
