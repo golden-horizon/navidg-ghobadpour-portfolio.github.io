@@ -37,25 +37,17 @@ dialog::backdrop{background:rgba(0,0,0,0.7);}
 
 /* Visitor Box */
 .visitor-box {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  background: #1e293b;
-  padding: 15px 25px;
-  border-radius: 8px;
-  border: 2px solid #2ea043;
-  width: 90%;
-  max-width: 900px;
-  margin: 20px auto;
+  width: 80%; max-width: 900px; margin: 20px auto; padding: 15px 25px;
+  background: #1e293b; border-radius: 8px; display: flex; flex-wrap: wrap; gap: 15px;
+  justify-content: space-between; align-items: center; border: 2px solid #2ea043;
 }
 
-.visitor-details h3 { color: #facc15; margin-bottom: 5px; }
-.visitor-details p { margin: 3px 0; color: #a855f7; }
-.visitor-details strong { color: #c084fc; }
+.visitor-box h3 { width: 100%; color: #facc15; font-size: 1.1rem; margin-bottom: 5px; }
+.visitor-box p { margin: 0; font-size: 0.9rem; color: #a855f7; }
+.visitor-box strong { color: #c084fc; }
 
 .speed-indicator { display: flex; flex-direction: column; align-items: center; }
-#speedValue { color: #00bcd4; font-weight: bold; margin-top: 5px; }
+#speedValue { margin-top: 5px; color: #00bcd4; font-weight: bold; }
 
-/* Hover links */
-.hover-link { text-decoration:none; color:#4da6ff; font-weight:bold; cursor:pointer; }
-.hover-link:hover { text-decoration:underline; color:red; }
+.hover-link{ text-decoration:none; color:#4da6ff; font-weight:bold; cursor:pointer; }
+.hover-link:hover{ text-decoration:underline; color:red; }
