@@ -67,15 +67,3 @@ function updateSpeed(){
 }
 
 updateSpeed();
-// Moving Banner
-const rect = document.getElementById("rect");
-let pos = -rect.offsetWidth;
-
-function moveBanner() {
-  rect.style.left = pos + "px";
-  pos += 1.5; // speed
-  if (pos > window.innerWidth) pos = -rect.offsetWidth;
-  requestAnimationFrame(moveBanner);
-}
-
-requestAnimationFrame(moveBanner);
