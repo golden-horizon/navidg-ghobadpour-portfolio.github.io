@@ -11,17 +11,23 @@
 <!-- Background Toggle Button -->
 <button id="btn" class="btn-outline">Toggle Background</button>
 
-<!-- Visitor Info (Horizontal) -->
-<div class="visitor-box horizontal">
-  <p><strong>IP:</strong> <span id="ip">Loading...</span></p>
-  <p><strong>City:</strong> <span id="city">Loading...</span></p>
-  <p><strong>Country:</strong> <span id="country">Loading...</span></p>
-  <p><strong>Browser:</strong> <span id="browser">Loading...</span></p>
-  <p><strong>Platform:</strong> <span id="platform">Loading...</span></p>
-  <p><strong>Screen:</strong> <span id="screen">Loading...</span></p>
+<!-- Moving Banner -->
+<div class="banner-wrapper">
+  <div id="rect" class="rect">
+    Building Secure Infrastructure for a Safer Digital World
+  </div>
+</div>
 
-  <div class="speed-indicator">
-    <canvas id="speedGauge" width="120" height="60"></canvas>
+<!-- Visitor Info Horizontal -->
+<div class="visitor-box">
+  <div class="info-item"><strong>IP:</strong> <span id="ip">Loading...</span></div>
+  <div class="info-item"><strong>City:</strong> <span id="city">Loading...</span></div>
+  <div class="info-item"><strong>Country:</strong> <span id="country">Loading...</span></div>
+  <div class="info-item"><strong>Browser:</strong> <span id="browser">Loading...</span></div>
+  <div class="info-item"><strong>Platform:</strong> <span id="platform">Loading...</span></div>
+  <div class="info-item"><strong>Screen:</strong> <span id="screen">Loading...</span></div>
+  <div class="speed-box">
+    <canvas id="speedGauge" width="100" height="50"></canvas>
     <div id="speedValue">0M</div>
   </div>
 </div>
@@ -47,7 +53,7 @@
 <!-- About -->
 <section id="about">
   <h2>About Me</h2>
-  <p>I began my technical journey with Cisco networking… [your content]</p>
+  <p>I began my technical journey with Cisco networking…</p>
 </section>
 
 <!-- Skills -->
