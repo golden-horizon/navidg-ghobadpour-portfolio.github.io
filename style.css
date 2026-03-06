@@ -23,7 +23,7 @@ section{max-width:1100px;margin:60px auto;padding:0 20px;}
 .card:hover{transform:translateY(-6px);border-color:#58a6ff;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 
 .visitor-box {
-  width: 50%;           
+  width: 20%;           
   max-width: 450px;     /* optional: limit maximum width */
   margin: 20px auto;
   padding: 15px 25px;
@@ -44,4 +44,5 @@ section{max-width:1100px;margin:60px auto;padding:0 20px;}
 
 .hover-link{text-decoration:none;color:#4da6ff;font-weight:bold;cursor:pointer;}
 .hover-link:hover{text-decoration:underline;color:red;}
+
 
